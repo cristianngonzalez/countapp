@@ -16,6 +16,7 @@ return new class extends Migration
             $table->increments('id');
             $table->string('name' , 255);
             $table->string('symbol' , 255);
+            $table->string('code' , 255);
             $table->timestamps();
         });
     }

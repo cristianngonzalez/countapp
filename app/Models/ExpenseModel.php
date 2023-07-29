@@ -9,7 +9,7 @@ class ExpenseModel extends Model
 {
     use HasFactory;
 
-    protected $table = 'expenses';
+    protected $table = 'expense';
 
     protected $fillable = [
         'expense_name',
@@ -39,6 +39,6 @@ class ExpenseModel extends Model
         return $this->belongsTo(PaymentMethodModel::class, 'payment_method_id');
     }
 
-    
+
 
 }

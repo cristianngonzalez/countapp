@@ -13,7 +13,8 @@ class CurrencyModel extends Model
 
     protected $fillable = [
         'name',
-        'symbol'
+        'symbol',
+        'code'
     ];
 
     //Relationships
