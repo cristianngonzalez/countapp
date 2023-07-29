@@ -11,14 +11,14 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::table('expense', function (Blueprint $table) {
+        Schema::create('expense', function (Blueprint $table) {
             //
             $table->increments('id');
             $table->string('name' , 255);
             $table->float('amount');
             $table->integer('user_id');
             $table->integer('category_id');
-            $table->interger('currency_id');
+            $table->integer('currency_id');
             $table->integer('payment_method_id');
             $table->date('date');
             $table->text('description');
